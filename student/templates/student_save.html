@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save Student in DB</title>
+</head>
+<body>
+    <h1>Save Student in DB</h1>
+    <form action="/save/" method="post">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="number" name="age" placeholder="Age" />
+        <input type="number" name="std" placeholder="Standard" />
+
+        <input type="submit" value="Store" />
+        {% csrf_token %}
+    </form>
+</body>
+</html>
